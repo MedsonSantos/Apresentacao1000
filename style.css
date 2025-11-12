@@ -1,4 +1,4 @@
-/* style.css — Jantinha Nota 1000 — Medson Santos */
+/* style.css*/
 :root {
   --cor-roxa: #9c27b0;
   --cor-roxa-claro: #e1bee7;
@@ -44,7 +44,7 @@ header {
 
 .logo-img {
   max-width: 100%;
-  max-height: 130px;
+  max-height: 140px;
   width: auto;
   height: auto;
   object-fit: contain;
@@ -222,7 +222,7 @@ html {
   h2 { font-size: 1.5rem; }
   .embed-container { height: 400px; }
   .logo-container { width: 120px; height: 120px; }
-  .logo-img { max-height: 90px; }
+  .logo-img { max-height: 120px; }
 }
 
 @media (max-width: 480px) {
@@ -231,6 +231,6 @@ html {
   .embed-container { height: 300px; }
   .social-grid { grid-template-columns: 1fr; }
   .logo-container { width: 100px; height: 100px; }
-  .logo-img { max-height: 70px; }
+  .logo-img { max-height: 900px; }
   .btn { padding: 0.6rem 1.2rem; font-size: 0.95rem; }
 }

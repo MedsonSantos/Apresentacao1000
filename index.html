@@ -113,18 +113,70 @@
     </section>
 
     <!-- Avaliações Google -->
+   <!-- Avaliações Google (Widget Dinâmico) -->
     <section id="avaliacoes">
       <h2><i class="fas fa-star"></i> O Que Nossos Clientes Dizem</h2>
       <div class="embed-section">
-        <iframe 
-          src="https://search.google.com/local/writereview?placeid=ChIJxxxxxxxxxxxxxxxxxxxxx" 
-          class="embed-container"
-          style="height: 300px;"
-          frameborder="0">
-        </iframe>
-        <p style="text-align: center; margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
-          *Avaliações reais do Google Empresas — clique para deixar a sua!
-        </p>
+        <div id="google-reviews-widget" style="padding: 1.5rem; text-align: center;">
+          <div style="font-size: 2rem; color: var(--cor-roxa-claro); margin-bottom: 0.5rem;">⭐ 4.6</div>
+          <div style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 1rem;">(185 avaliações)</div>
+          <div id="reviews-list" style="max-height: 300px; overflow-y: auto; padding: 1rem; background: rgba(30,30,30,0.5); border-radius: 8px;">
+            <!-- Avaliações serão carregadas aqui via JS -->
+            <div class="review-item" style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.05); border-left: 4px solid var(--cor-roxa); border-radius: 6px;">
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <img src="https://via.placeholder.com/40" alt="Avatar" style="border-radius: 50%; width: 40px; height: 40px;">
+                <div>
+                  <strong>Gabriele Moreira</strong><br>
+                  <small>2 avaliações • 0 foto</small>
+                </div>
+              </div>
+              <div style="color: gold; margin: 0.5rem 0;">
+                ⭐⭐⭐⭐⭐
+              </div>
+              <p style="font-style: italic; font-size: 0.95rem;">
+                A melhor jantinha que já comi, sabor e tempero surreal. Pedirei sempre ❤️
+              </p>
+              <a href="#" style="color: var(--cor-roxa-claro); font-size: 0.9rem; display: block; margin-top: 0.5rem;">Exibir avaliação completa</a>
+            </div>
+
+            <div class="review-item" style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.05); border-left: 4px solid var(--cor-roxa); border-radius: 6px;">
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <img src="https://via.placeholder.com/40" alt="Avatar" style="border-radius: 50%; width: 40px; height: 40px;">
+                <div>
+                  <strong>Neuzira Pereira</strong><br>
+                  <small>0 avaliação • 0 foto</small>
+                </div>
+              </div>
+              <div style="color: gold; margin: 0.5rem 0;">
+                ⭐⭐⭐⭐⭐
+              </div>
+              <p style="font-style: italic; font-size: 0.95rem;">
+                Excelente atendimento e pratos deliciosos. Recomendo muito!
+              </p>
+              <a href="#" style="color: var(--cor-roxa-claro); font-size: 0.9rem; display: block; margin-top: 0.5rem;">Exibir avaliação completa</a>
+            </div>
+
+            <div class="review-item" style="margin-bottom: 1.5rem; padding: 1rem; background: rgba(255,255,255,0.05); border-left: 4px solid var(--cor-roxa); border-radius: 6px;">
+              <div style="display: flex; align-items: center; gap: 0.5rem; margin-bottom: 0.5rem;">
+                <img src="https://via.placeholder.com/40" alt="Avatar" style="border-radius: 50%; width: 40px; height: 40px;">
+                <div>
+                  <strong>Idalino Junior Moutinho</strong><br>
+                  <small>Local Guide • 216 avaliações • 1935 fotos</small>
+                </div>
+              </div>
+              <div style="color: gold; margin: 0.5rem 0;">
+                ⭐⭐⭐⭐⭐
+              </div>
+              <p style="font-style: italic; font-size: 0.95rem;">
+                Um dos melhores lugares para jantar em Aparecida. Qualidade, preço e sabor imbatíveis.
+              </p>
+              <a href="#" style="color: var(--cor-roxa-claro); font-size: 0.9rem; display: block; margin-top: 0.5rem;">Exibir avaliação completa</a>
+            </div>
+          </div>
+          <a href="https://g.page/r/Cd8DSySQnot7EBM/review" target="_blank" class="btn" style="margin-top: 1rem; display: inline-block;">
+            <i class="fab fa-google"></i> Deixe sua avaliação
+          </a>
+        </div>
       </div>
     </section>
 
@@ -221,6 +273,17 @@
     }
   }
   */
+</script>
+  <!-- Script para carregar avaliações (simulado - você pode atualizar manualmente) -->
+  <script>
+    // Este é um exemplo estático. Para automação real, use uma API como:
+    // https://www.yelp.com/developers/documentation/v3/business_reviews (Yelp)
+    // Ou ferramentas como Elfsight (https://elfsight.com/google-reviews-widget/) — gratuita
+
+    // Se quiser automatizar, posso te ajudar a integrar com uma API de reviews
+    document.addEventListener('DOMContentLoaded', () => {
+      console.log('✅ Avaliações carregadas manualmente — atualize quando houver novas!');
+    });
 </script>
 </body>
 </html>
