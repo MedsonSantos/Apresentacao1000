@@ -129,7 +129,20 @@
         width: 80px;
         height: 80px;
         margin: 0 auto 1rem;
-        color: var(--vermelho-claro);
+        background: rgba(239, 108, 0, 0.1); /* Fundo laranja claro (opcional) */
+        border-radius: 50%; /* Deixa o fundo redondo */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s ease;
+        }
+
+        .social-icon:hover {
+        background: rgba(239, 108, 0, 0.2); /* Leve destaque ao passar o mouse */
+        }
+        .social-icon svg path {
+        fill: #ef6c00 !important;
+        stroke: #ef6c00 !important;
         }
 
         .social-card h3 {
@@ -278,4 +291,20 @@
             height: 250px;
             min-height: 200px;
         }
+        }
+        /* Forçar tema escuro nos widgets do Elfsight (Facebook e Instagram) */
+        .elfsight-app-9b2634c1-488d-4075-8e12-4f0e3db541d2 { /* ID do widget do Google */
+        background: var(--bg-card) !important;
+        color: var(--texto-claro) !important;
+        }
+
+        /* Se você usar o Elfsight para Facebook ou Instagram, substitua o ID abaixo */
+        .elfsight-app-facebook-id { /* Substitua por seu ID real */
+        background: var(--bg-card) !important;
+        color: var(--texto-claro) !important;
+        }
+
+        .elfsight-app-instagram-id { /* Substitua por seu ID real */
+        background: var(--bg-card) !important;
+        color: var(--texto-claro) !important;
         }
