@@ -122,18 +122,19 @@
 
         .social-card:hover {
         transform: translateY(-6px);
-        box-shadow: 0 10px 25px rgba(186, 86, 204, 0.25);
+        box-shadow: 0 10px 25px var(--laranja-escuro);
         }
 
         .social-icon {
         width: 80px;
         height: 80px;
         margin: 0 auto 1rem;
+        color: var(--vermelho-claro);
         }
 
         .social-card h3 {
         margin-bottom: 0.75rem;
-        color: var(--vermelho-claro);
+        color: var(--laranja-escuro);
         font-weight: 600;
         }
 
@@ -141,8 +142,8 @@
         display: inline-flex;
         align-items: center;
         gap: 0.5rem;
-        background: var(--laranja-escuro);
-        color: var(--bg-fundo-1);
+        background: var(--vermelho-claro);
+        color: var(--bg-escuro);
         padding: 0.75rem 1.5rem;
         border-radius: 50px;
         text-decoration: none;
