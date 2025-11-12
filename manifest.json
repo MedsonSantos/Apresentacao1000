@@ -2,7 +2,7 @@
   "name": "Jantinha Nota 1000",
   "short_name": "Jantinha1000",
   "description": "Sabor feito com carinho em Aparecida de Goiânia.",
-  "start_url": "/apresentacao.html",
+  "start_url": "/Apresentacao.html",
   "display": "standalone",
   "background_color": "#121212",
   "theme_color": "#9c27b0",
