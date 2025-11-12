@@ -7,6 +7,8 @@
   --bg-card: #1e1e1e;
   --texto-claro: #f5f5f5;
   --borda: #333;
+  --bg-comida: #b37208;
+  --bg-comida-2: #362803b2;
 }
 
 * {
@@ -26,7 +28,7 @@ body {
 header {
   text-align: center;
   padding: 2rem 1rem;
-  background: linear-gradient(135deg, var(--bg-escuro), var(--cor-roxa-escuro));
+  background: linear-gradient(135deg, var(--bg-comida), var(--bg-comida-2));
 }
 
 .logo-container {
@@ -39,26 +41,27 @@ header {
   align-items: center;
   justify-content: center;
   border: 2px solid var(--cor-roxa);
-  box-shadow: 0 4px 20px rgba(156, 39, 176, 0.15);
+  box-shadow: 0 4px 20px rgba(231, 167, 6, 0.15);
 }
 
 .logo-img {
   max-width: 100%;
-  max-height: 140px;
+  max-height: 150px;
   width: auto;
   height: auto;
   object-fit: contain;
   display: block;
-  filter: drop-shadow(0 0 6px rgba(156, 39, 176, 0.3));
+  filter: drop-shadow(0 0 6px rgba(243, 179, 3, 0.3));
 }
 
 h1 {
   font-weight: 700;
   font-size: 2.5rem;
   margin-bottom: 0.5rem;
-  background: linear-gradient(to right, #e1bee7, #9c27b0);
-  -webkit-background-clip: text;
-  background-clip: text;
+  background: linear-gradient(to right, #c2ab50, #8f3904);
+    -webkit-background-clip: text;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--borda);
   color: transparent;
 }
 
@@ -68,6 +71,7 @@ h1 {
   max-width: 600px;
   margin: 0 auto;
   line-height: 1.5;
+  
 }
 
 .container {
@@ -156,6 +160,7 @@ h2 i {
   padding: 1.5rem;
   overflow: hidden;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
 }
 
 .embed-container {
@@ -164,6 +169,7 @@ h2 i {
   border: none;
   border-radius: 8px;
   background: #000;
+  overflow: hidden;
 }
 
 /* Depoimentos */
@@ -233,4 +239,36 @@ html {
   .logo-container { width: 100px; height: 100px; }
   .logo-img { max-height: 900px; }
   .btn { padding: 0.6rem 1.2rem; font-size: 0.95rem; }
+}
+/* Para Facebook: forçar responsividade */
+#facebook-feed .embed-container {
+  min-height: 400px;
+  max-height: 600px;
+  height: auto !important;
+  aspect-ratio: 16 / 9; /* Mantém proporção */
+}
+
+/* Garantir que o iframe do Facebook não ultrapasse o container */
+#facebook-feed .embed-container iframe {
+  width: 100% !important;
+  height: 100% !important;
+  min-width: 300px;
+  max-width: 100%;
+  border: none;
+  display: block;
+}
+
+/* Mobile: ajusta altura */
+@media (max-width: 768px) {
+  #facebook-feed .embed-container {
+    height: 300px;
+    min-height: 250px;
+  }
+}
+
+@media (max-width: 480px) {
+  #facebook-feed .embed-container {
+    height: 250px;
+    min-height: 200px;
+  }
 }
